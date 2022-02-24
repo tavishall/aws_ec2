@@ -1,0 +1,43 @@
+syntax enable
+" colorscheme monokai
+colorscheme delek
+
+" Highlights all search matches
+set hlsearch
+
+" Use line numbers
+set nu
+
+" Insert spaces instead of tabs
+set expandtab
+
+" Inserts this many spaces for tab
+set shiftwidth=4
+
+" One tab is shown as 4 spaces if already there
+set tabstop=4
+
+" Set indent plugin on for code auto indent
+filetype indent plugin on
+
+" Set color column on
+set cc=80
+
+" Set automatic word wrap
+set tw=79
+
+" Set auto indent
+set ai
+
+" Set code fold to use indent levels - decent for python
+set foldmethod=indent
+
+" By default, open files with every fold open
+set foldlevel=88
+
+" Remap za to the space bar - this will open and close folds with space
+" NOTE: Before this, the space bar moved forward one character - not terribly
+" useful
+nnoremap <space> za
+
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
